@@ -6,13 +6,24 @@ body {
 }
 
 .general-text {
-    color: red;
+    color: blue;
 }
 
 header {
     background-color: bisque;
     width: 100%;
     padding:20px;
+    position:fixed;
+    top: 0;
+    z-index: 100
+    /* z index is stacking */
+
+}
+footer {
+    background-color: bisque;
+    width: 100%;
+    padding:20px;
+    /* z index is stacking */
 
 }
 
@@ -32,6 +43,8 @@ nav {
 
 .header-link {
     /* this syntax targets every child a tag inside a parent nav tag */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     font-size: 21px;
     text-decoration: none;
     color: black;
@@ -51,13 +64,16 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 105px;
+    /* margin-top creates gaps compared to padding */
+    /* recommeded to pad 20px from edge */
 }
 /* reusable classes */
 
 .button-link {
     font-size: 18px;
-    background-color: blue;
-    color: green;
+    background-color:bisque;
+    color: black;
     font-weight: 700;
     border-radius: 10px;
     padding: 12px 8px;
@@ -68,7 +84,7 @@ main {
 
 .button-link:hover {
     scale: 1;
-    background-color: rgb(0, 255, 115);
+    background-color: rgb(201, 180, 155);
     
     
 }
@@ -80,5 +96,12 @@ main {
     gap: 50px;
 }
 
+.catimg {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+    box-shadow: 5px 8px 10px 6px;
+    /* border-radius always rounds the edges the higher pixel count is more round edges*/
+}
 /* header > nav > a{ color: green;}
 css has waterfall effect will respect last in file */
