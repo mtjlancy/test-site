@@ -103,5 +103,13 @@ main {
     box-shadow: 5px 8px 10px 6px;
     /* border-radius always rounds the edges the higher pixel count is more round edges*/
 }
+
+.manimg {
+    width: 200px;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 5px 8px 10px 6px;
+    /* border-radius always rounds the edges the higher pixel count is more round edges*/
+}
 /* header > nav > a{ color: green;}
 css has waterfall effect will respect last in file */
